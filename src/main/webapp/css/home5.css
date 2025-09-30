@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #e0f7fa, #c3cfe2);
+	min-height: 100vh;
+}
+
+/* 🔹 Top Header */
+.header {
+	background-color: #007bff;
+	color: white;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+	background: #0056b3;
+	padding: 8px 14px;
+	border-radius: 6px;
+	transition: background 0.3s;
+}
+
+.header a:hover {
+	background: #003d80;
+}
+
+h2 {
+	text-align: center;
+	margin: 30px 0 10px;
+	font-size: 26px;
+	color: #333;
+}
+
+.message {
+	text-align: center;
+	color: green;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+/* 📝 Orders Table */
+table {
+	width: 90%;
+	margin: 0 auto 40px;
+	border-collapse: collapse;
+	background: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+
+th {
+	background: #f0f0f0;
+	font-weight: 600;
+	color: #333;
+}
+
+tr:hover {
+	background: #f9f9f9;
+}
+
+.status {
+	font-weight: bold;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 13px;
+}
+
+.Pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.Shipped {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.Delivered {
+	background: #d4edda;
+	color: #155724;
+}
+
+.empty-row {
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+	color: #555;
+}
+
+/* 📱 Responsive */
+@media ( max-width : 768px) {
+	table {
+		width: 95%;
+		font-size: 14px;
+	}
+	th, td {
+		padding: 8px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+}

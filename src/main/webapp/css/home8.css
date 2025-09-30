@@ -1,0 +1,143 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+	min-height: 100vh;
+}
+
+/* 🔹 Navbar */
+.navbar {
+	background-color: #007bff;
+	color: white;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar h1 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	background: #0056b3;
+	padding: 8px 14px;
+	border-radius: 6px;
+	transition: background 0.3s;
+}
+
+.navbar a:hover {
+	background: #003d80;
+}
+
+h2 {
+	text-align: center;
+	margin: 25px 0 15px;
+	font-size: 26px;
+	color: #333;
+}
+
+/* 📝 Orders Table */
+table {
+	width: 95%;
+	margin: 0 auto 40px;
+	border-collapse: collapse;
+	background: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+
+th {
+	background: #f0f0f0;
+	font-weight: 600;
+}
+
+tr:hover {
+	background: #f9f9f9;
+}
+
+/* 🏷 Status badge styles */
+.status {
+	font-weight: bold;
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 13px;
+}
+
+.Pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.Shipped {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.Delivered {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* ✏️ Dropdown & Button */
+select {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 13px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 5px;
+	transition: background 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+.message {
+	text-align: center;
+	color: green;
+	margin: 15px 0;
+	font-weight: 500;
+}
+
+.empty {
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+	color: #555;
+}
+
+/* 📱 Responsive */
+@media ( max-width : 768px) {
+	table {
+		width: 98%;
+		font-size: 13px;
+	}
+	th, td {
+		padding: 8px;
+	}
+	.navbar h1 {
+		font-size: 18px;
+	}
+}
